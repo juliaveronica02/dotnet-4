@@ -18,7 +18,12 @@
 15. on "appsettings.json" files add connection strings.
 16. at "program.cs" file add as a service to the DBContext and reference the DefaultConnection the property specified in the "appsettings.json" file. the code put in below comment "// Add services to the container."
 17. don't forget on "program.cs" file add dependency "using WebApplication3.Entities;".
-
+18. to transport data between the processes for the management of the database and the processes for working with web services, it's advisable to establish DTO classes for each entity of the project.
+19. to do this, we create a new folder within the project called DTO and create a class called UserDTO, whose attributes will be the same as the `user.cs` defined in the entities folder.
+20. create class: right click on the mouse - add - class.
+21. add controller: right click on the mouse - controller - API - API empty controller.
+22. controller folder goal: perform CRUD operations (Create, read, update, and delete). method: post (create), get (read), put (update) and delete.
+23. to clear record on database with ID start from zero again, we can press "empty" on xampp phpymyadmin.
 
 ------
 ## push to github repo
@@ -28,5 +33,3 @@
 4. `git remote add origin <your github repo link>`
 5. `git push origin master`
 6. done.
-initialize project and connect with database 
-change readme.me add note for push code to github
